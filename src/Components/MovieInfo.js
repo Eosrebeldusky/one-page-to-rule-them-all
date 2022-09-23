@@ -4,9 +4,10 @@ export function MoveInfo(props){
     const [] = props
 
     return(
-
+        <div>
         <h1>{title}</h1>
-        <p>{}</p>
+        <p>{tit}</p>
+        </div>
     )
 
 

@@ -1,1 +1,5 @@
-const url = 'https://the-one-api.dev/v2/'
+import instance from "./axios";
+
+export function getAll(){
+    return instance.get()
+}
