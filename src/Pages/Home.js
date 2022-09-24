@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getBooks } from "../Services/HomeServices";
 
 import BasicModal from '../Components/BaiscModal';
 import "../Css/home.css"
@@ -11,7 +12,20 @@ function Home (){
     const [error,setError] = useState(false)
     const [errordata,setErrordata] = useState(false)
 
-    
+    const [axiosData,setAxiosData] = useState();
+
+    //Axios test useEffect
+
+    useEffect(() =>{
+        getBooks().
+        then(res =>{setAxiosData(res);
+        console.log(res)})
+        setLoading(false)        
+    },[]);
+
+
+
+/*    No axios effect (en reealidad hay que borrar)
     useEffect(()=>{
     const fetchData = async ()=>{ 
         try{                     
@@ -28,7 +42,7 @@ function Home (){
     fetchData();
 
 },[]);
- 
+ */
 
     //hacer un modal con tenes que esperar hiciste muchas consultas.    
 
@@ -48,7 +62,8 @@ function Home (){
             <body>
             <header >
             <h1>One Page to Rule them All</h1>
-            </header>
+            </header>            
+            
             <Menu/>            
             <BasicModal modalTitle={'Modal 1'} modalInfo={modalInfo}/>
             </body>            
