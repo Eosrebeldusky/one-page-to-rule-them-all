@@ -1,6 +1,7 @@
 import { useSlotProps } from "@mui/base";
 import { useEffect, useState } from "react";
 import MovieInfo from "../Components/MovieInfo.js";
+import Menu from "../Components/Menu.js";
 //import key from '../Components/Config'
 function ReturnKing(){
 
@@ -39,7 +40,8 @@ function ReturnKing(){
         },[]); // el use effect con el array vacio al final hace que todo el choclazo no se llame mas de una vez
 
             return(loading ? <div> Loading </div> :           
-            <div>          
+            <div>
+                <Menu/>           
                 <MovieInfo title={title} runTime={runTime} awardWins={awardWins} rottenTomatoeScore={rotten}/>
             </div>
             )

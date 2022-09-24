@@ -1,6 +1,6 @@
-    import {useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import MovieInfo from '../Components/MovieInfo'
-
+import Menu from "../Components/Menu.js";
 
 function Fellowship(){
     const headers ={
@@ -39,7 +39,8 @@ useEffect(()=>{
     
     return(
         loading ? <div><h1>Cargando</h1></div> :
-        <div>           
+        <div>
+            <Menu/>            
            <MovieInfo title = {titulo} runTime={runTime} awardWins={award} rottenTomatoeScore={rotten}/>
            
         </div>

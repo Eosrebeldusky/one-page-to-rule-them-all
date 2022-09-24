@@ -1,5 +1,6 @@
 import {useEffect, useState } from "react";
 import MovieInfo from "../Components/MovieInfo";
+import Menu from "../Components/Menu.js";
 
 function Towers(){
     const headers= {
@@ -33,6 +34,7 @@ function Towers(){
     return( loading ? <div>Loading </div> : //operador ternario para devolve a o b = loading ? a : b
 
         <div>
+            <Menu/> 
             <MovieInfo title = {titulo} runTime={runTime} awardWins={award} rottenTomatoeScore={rotten}/>
         </div>
     )
