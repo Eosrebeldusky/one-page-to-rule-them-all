@@ -21,8 +21,7 @@ function Home (){
         }catch(e){
             console.error("error", e)
             setError(true)
-            setErrordata(e)
-            
+            setErrordata(e)            
         }
     };
     fetchData();
