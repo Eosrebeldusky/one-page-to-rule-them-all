@@ -1,14 +1,16 @@
-import { toBeInTheDOM } from "@testing-library/jest-dom/dist/matchers";
 
-export function MoveInfo(props){
-    const [] = props
+
+function MoveInfo(props){
+    const [title] = props
 
     return(
         <div>
         <h1>{title}</h1>
-        <p>{tit}</p>
+        <p>{title}</p>
         </div>
     )
 
 
 }
+
+export default MoveInfo;
