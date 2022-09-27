@@ -1,5 +1,4 @@
 
-
 function MoveInfo(props){
     const [title] = props
 
