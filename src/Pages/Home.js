@@ -10,8 +10,7 @@ function Home (){
 
     const [axiosData,setAxiosData] = useState();
 
-    //Axios test useEffect
-
+    
 
 
 //    No axios effect (en reealidad hay que borrar)
@@ -28,10 +27,9 @@ function Home (){
             setErrordata(e)            
         }
     };
-    fetchData();
+    fetchData(); //Probando
 
 },[]);
-
 
     //hacer un modal con tenes que esperar hiciste muchas consultas.    
 
@@ -44,7 +42,6 @@ function Home (){
                 </ul>
             </div>
             )
-
 }
 
 export default Home;
