@@ -5,19 +5,19 @@ function Menu(){
 
     return(
         
-    <div class='wrapper'>
+    <div className='wrapper'>
             <Link to="/">Home</Link>
-            <div class="column">            
+            <div className="column">            
                 <Link to="/fellowship">
                     <img src={process.env.PUBLIC_URL+"/fellowshipMenu.png"} alt='fellowship'></img>
                 </Link>
             </div>     
-            <div class="column">
+            <div className="column">
                 <Link to="/towers">
                     <img src={process.env.PUBLIC_URL+"/towersMenu.png"} alt='towers'></img>
                 </Link>
             </div>
-            <div class= "column">
+            <div className= "column">
                 <Link to="/return">
                     <img src={process.env.PUBLIC_URL+"/kingMenu.png"} alt='return'></img>
                 </Link>
