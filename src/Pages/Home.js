@@ -37,9 +37,7 @@ function Home (){
             return(
             <div>
                 <Menu/>
-                <ul>
-                    <li><Link to="/fellowship"> Fellowship </Link></li>                    
-                </ul>
+                
             </div>
             )
 }
